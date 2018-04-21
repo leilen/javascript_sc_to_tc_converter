@@ -73,7 +73,7 @@ if (typeof window === 'undefined') {
         }
     }
     exports.s2t = s2t;
-    exports.s2t = s2t;
+    exports.t2s = t2s;
 }
 // 브라우저에서 실행됐을경우
 else {
