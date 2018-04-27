@@ -21,7 +21,7 @@ function t2s(text) {
 // 실질적으로 변환을 하는 함수
 function convert(text, dic) {
     var returnString = '';
-    for (i in text) {
+    for (i=0;i<text.length;i++){
         returnString += (dic[text[i]] != undefined ? dic[text[i]] : text[i]);
     }
     return returnString;
