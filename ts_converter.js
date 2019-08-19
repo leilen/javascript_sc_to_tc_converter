@@ -21,7 +21,7 @@ function t2s(text) {
 // 실질적으로 변환을 하는 함수
 function convert(text, dic) {
     var returnString = '';
-    for (i=0;i<text.length;i++){
+    for (i = 0; i < text.length; i++) {
         returnString += (dic[text[i]] != undefined ? dic[text[i]] : text[i]);
     }
     return returnString;
@@ -72,10 +72,9 @@ if (typeof window === 'undefined') {
             }
         }
     }
-    exports.s2t = s2t;
-    exports.t2s = t2s;
 }
 // 브라우저에서 실행됐을경우
 else {
-
 }
+exports.s2t = s2t;
+exports.t2s = t2s;
